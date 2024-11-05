@@ -2,13 +2,50 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header > nav {
     display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background-color: #B8C0FF;
+    color: white;
+    box-shadow: 0px 0px 300px #C8B6FF;
 
 }
+nav > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+}
+
+li > a {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background-color: #B8C0FF;
+}
+a:link, a:visited {
+    background-color: #7029ff;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 9px;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(185, 126, 252);
+  }
 
 main {
     display: flex;
+    flex-direction: column; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -28,5 +65,90 @@ footer {
     color: white;
     padding: 10px;
     box-shadow: 0px 0px 300px #C8B6FF;
+
+}
+/* Estilos para Home */
+.welcome {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.welcome h2 {
+    font-size: 24px;
+    color: #2c3e50; /* Color de encabezado */
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px; 
+}
+.skills li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para About */
+.about-content {
+    padding: 20px 0;
+}
+
+.about-content h2 {
+    color: #2c3e50; /* Color de encabezado */
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555; /* Color de texto */
+}
+
+/* Estilos para Contact */
+.contact-form {
+    margin-top: 20px; 
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #2c3e50; /* Color de encabezado */
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Bordes gris claro */
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; }
+
+.contact-form button {
+    margin-top: 15px;
+    background-color: #3498db; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; }
+
+.contact-form button:hover {
+    background-color: #2980b9; 
 
 }

@@ -11,8 +11,24 @@ html(lang="en")
         include ./header.pug
 
         main
-            h1 Hola! Esta es mi template de contacto.
-            section 
+            // Breve introducción
+            section.intro
+                p Puedes ponerte en contacto conmigo completando el siguiente formulario.
+
+            // Formulario de contacto
+            section.contact-form
+                h2 Envíame un mensaje
+                form(action="/send-message" method="POST")
+                    label(for="name") Nombre
+                    input(type="text" id="name" name="name" required)
+
+                    label(for="email") Email
+                    input(type="email" id="email" name="email" required)
+
+                    label(for="message") Mensaje
+                    textarea(id="message" name="message" rows="4" required)
+
+                    button(type="submit") Enviar 
                 
 
         include ./footer.pug
