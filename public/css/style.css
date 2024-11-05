@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+
+}
+
+main {
+    display: flex;
+}
+
+body {
+    background: linear-gradient(#FFD6FF, #C8B6FF, #E7C6FF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #B8C0FF;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 300px #C8B6FF;
+
+}
